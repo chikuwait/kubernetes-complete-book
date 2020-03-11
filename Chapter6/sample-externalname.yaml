@@ -1,0 +1,9 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: sample-externalname
+  namespace: default
+spec:
+  type: ExternalName
+  externalName: exeternal.example.com
+
