@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: smaple-pvc
+  name: sample-pvc
 spec:
   selector:
     matchLabels:
