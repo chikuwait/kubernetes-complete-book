@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-restart-onfailure
+spec:
+  restartPolicy: OnFailure
+  containers:
+    - name: nginx-container
+      image: nginx:1.12
+      command: ["sh","-c","exit 0"]
