@@ -1,0 +1,11 @@
+apiVersion: extensions/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: sample-podsecuritypolicy
+spec:
+  privileged: false
+  runAsUser:
+    rule: 'MustRunAsNonRoot'
+  allowPrivilegeEscalation: true
+  allowedCapabilities:
+  - "*"
