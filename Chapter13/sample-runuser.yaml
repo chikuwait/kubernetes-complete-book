@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-runuser
+spec:
+  securityContext:
+    runAsUser: 99
+    supplementalGrups:
+      - 1001
+      - 1002
+  containers:
+    - name: centos-container
+      image: centos:7
+      command: ["/bin/sleep","1600"]
