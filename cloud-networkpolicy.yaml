@@ -1,0 +1,11 @@
+apiVersion: networking.k8s.io
+kind: networkPolicy
+metadata:
+  name: cloud-networkpolicy
+spec:
+  podSelector: {}
+  egress:
+  - {}
+  policyTypes:
+  - Ingress
+  - Egress
