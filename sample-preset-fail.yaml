@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-preset-fail
+  labels:
+    app: podpreset
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.12
+    env:
+    - name: SAMPLE_ENV
+      value: "CONFICT_ENV"
+

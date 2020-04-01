@@ -1,0 +1,12 @@
+apiVerion: v1
+kind: Pod
+metadata:
+  name: sample-sysctl-annotatoin
+  annotations:
+    security.alpha.kubernetes.io/sysctls: kernel.shm_rmid_forced=1
+    secyrity.alpha.kubernetes.io/unsafe-sysctls: net.core.somaxconn="12345"
+spec:
+  containers:
+    - name: cnetos-container
+      image: centos:7
+      comman: ["/bin/sleep","3600"]
