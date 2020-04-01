@@ -27,7 +27,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: sample-pod-np3
-  namespace: default
+  namespace: nptest
   labels:
     app: np3
 spec:
@@ -39,7 +39,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: sample-pod-np4
-  namespace: default
+  namespace: nptest
   labels:
     app: np4
 spec:
