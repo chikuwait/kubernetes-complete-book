@@ -1,4 +1,4 @@
-apiVersion: networking.ks8.io/v1
+apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: sample-podselector-ingress-networkpolicy
@@ -11,8 +11,8 @@ spec:
   ingress:
   - from:
     - podSelector:
-      matchLabels:
-        app: np1
+        matchLabels:
+          app: np1
     ports:
     - protocol: TCP
       port: 80
